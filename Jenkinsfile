@@ -2,7 +2,7 @@ pipeline {
   agent {
     // A lépések a hivatalos Node 18 image-ben futnak
     docker {
-      image 'node:18-bullseye'
+      image 'node:20-bullseye'
       // ha több build fut egymás után ugyanazon agenten, ne cseréljen workspace-t
       reuseNode true
       // ha jogosultsági gond lenne, add hozzá: args '-u root:root'
